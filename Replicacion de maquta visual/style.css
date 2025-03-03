@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 13vh;
+    width: 200vh;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-left{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 8vh;
+}
+
+.Ingresar{
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    margin-top: 30vh;
+    margin-right: 40vh;
+}
+
+.Ingresar span{
+    color: #00CBBF;
+}
+
+.logo_consalud{
+    height: 6vh;
+    align-content: flex-start;
+    margin-bottom: 2vh;
+}
+
+
+
+.nav-right{
+    display: flex;
+    margin-top: 90vh;
+    display: grid;
+    grid-template-rows: auto 1fr; /* Define las filas */
+    margin-right: 30px; /* Mueve el elemento 30px hacia la izquierda */
+}
+
+.search{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-left: 19vh;
+    width: 40vh;
+    height: 6vh;
+    background-color: rgb(238, 237, 237);
+    margin-left: 2vh;
+}
+
+.RUT{
+    background-color: rgb(238, 237, 237);
+    border: none;
+}
+
+.clave{
+    background-color: rgb(238, 237, 237);
+    border: none;
+}
+
+.ver-clave{
+    height: 15px;
+    margin-left: 20vh; 
+}
+
+.mobil{
+    width: 10vh;
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personas{
+    height: 5vh;
+    width: 5vh;
+}
+
+.cupon-link{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 0.966);
+    font-size: 15px;
+}
+
+.perfil{
+    width: 10vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil{
+    height: 5vh;
+    width: 5vh;
+}
+
+.perfil-link{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 0.966);
+    font-size: 15px;
+}
+
+.ingresar{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    padding: 9px 10px;
+    background-color: #00CBBF;
+    border-radius: 17px;
+}
+
+.huella{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #00CBBF;
+    padding: 8px 10px;
+    background-color:white;
+    border-radius: 20vh;
+}
+
+.icon{
+    width: 8vh;
+    padding: 5px;
+    margin-left: 3vh;
+}
+
+
+
+.i-direccion{
+    font-family: sans-serif;
+    color: white;
+    margin-left: 12vh;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.banner{
+    width: 220vh;
+}
