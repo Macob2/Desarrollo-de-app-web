@@ -21,11 +21,11 @@ function mostrarMatriz(){
 }
 
 function mostrarIndefinida(){
-
+    alert(indefinida);
 }
 
 function mostrarBoolean(){
-
+    alert (boolean);
 }
 
 function mostrarNull(){
