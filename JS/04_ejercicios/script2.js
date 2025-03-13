@@ -40,6 +40,6 @@ function declararVariables() {
         let nCasa = prompt("Ingresar numero de Casa");
         let mensaje = direccion + " " + nCasa;
 
-    alert("La direccion es: " + mensaje + "\n Cantidad de caracteres")
+    alert("La direccion es: " + mensaje + "\n Cantidad de caracteres: " + mensaje.length + "\n Y el antepenultimo es: " + mensaje[mensaje.length - 3]);
     // Tu código aquí
     }
