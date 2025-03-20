@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+background-color: cornflowerblue;
+padding: 10px;
+}
+
+ul{
+list-style: none;
+display: flex;
+}
+
+li{
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    display: space-between;
+}
+a:hover{
+    color: darkblue;
+}
+
+button{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    width: 20vh;
+    height: auto;
+}
