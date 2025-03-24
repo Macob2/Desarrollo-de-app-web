@@ -4,37 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Condicionales</title>
 </head>
 <body>
-<nav>
-    <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
-<main>
-    <div>
-    <p>Verificacion de acceso.</p>
-    <button onclick="acceso()">Verificar</button>
-    <button onclick="aceptar()">Aceptar terminos</button>
-    </div>
-    <div>
-    <p>Elegibilidad de descuento.</p>
-    <button onclick="descuento()">Verficacion de descuento</button>
-    </div>
-    <div>
-    <p>Validacion de usuario.</p>
-    <button onclick="validar()">Validar</button>
-    </div>
-    <div>
-    <p>Encendido de una maquina.</p>
-    <button onclick="maquina()">Encender</button>
-    </div>
-    <div>
-    <p>Acceso restringido.</p>
-    <button onclick="restringido()">Acceder</button>
-    </div>
-</main>
-    <script src="script5.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p>Ingrese su edad y acepte los terminos</p>
+                <button onclick="verificacion_de_cuenta()">Edad y terminos</button>
+            </div>
+            <div>
+                <p>Acepta nuestros terminos y condiciones</p>
+                <button onclick="terminos()">Aceptar</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p>Verificacion de si tiene descuento</p>
+                <button onclick="descuento()">Verificar</button>
+            </div>
+            <div>
+                <p>Verifique si es estudainte</p>
+                <button onclick="estudiante()">Verificar</button>
+            </div>
+        </section>
+        <div>
+            <p>Usuario y contraseña</p>
+            <button onclick="validar_usuario_contrsena()">Ingresar</button>
+        </div>
+        <section>
+            <div>
+                <p>Encender maquina</p>
+                <button onclick="encender_maquina()">Encender maquina</button>
+            </div>
+            <div>
+                <p>Suministrar energia</p>
+                <button onclick="suministrar_energia()">Suministrar</button>
+            </div>
+            <div>
+                <p>Activar interruptor</p>
+                <button onclick="encender_interruptor()">Activar</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p>Acceder a zona</p>
+                <button onclick="encender_maquina()">Acceder</button>
+            </div>
+            <div>
+                <p>Obtener credenciales</p>
+                <button onclick="suministrar_energia()">Obtener</button>
+            </div>
+            <div>
+                <p>Bloquear zona</p>
+                <button onclick="encender_interruptor()">Bloquear</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,49 +1,142 @@
 console.log("Vinculado correctamente...");
-    function aceptar(){
-    let aceptaTerminos = false;
-}
+//Variables globales
 
-function acceso(){
-    let edad = prompt("ingrese su edad: ");
+let terminos_condiciones = false;
+let esEstudiante = false;
+let energiaSuficiente  = false;
+let interruptorEncendido  = false;
+let bloqueado = false;
+let tieneCredenciales = false;
 
-    if (edad < 18 && aceptaTerminos === false) {
-        alert("Acceso denegado.");
-    } else { (edad >= 18 && aceptaTerminos === true) 
-        alert("Acceso concedido.");
-    }
-}
+//Primer ejercicio
 
-function Ver_usuario(){
-    let nombreUsuario = prompt("ingrese su usuario: ")
-    let contraseña = prompt("ingrese su contraseña: ")
-
-    if (nombreUsuario === "usuario1234" && contraseña === "secreto"){
-        alert("Su usuario es: " + nombreUsuario + "\nSu contraseña es: " + contraseña + "\nAcceso concedido") 
+function terminos() {
+    if (terminos_condiciones == false) {
+        terminos_condiciones = true;
+        alert(terminos_condiciones)
     } else {
-        alert("Su usuario es: " + nombreUsuario + "\nSu contraseña es: " + contraseña + "\nAcceso denegado") 
+        terminos_condiciones = false;
+        alert(terminos_condiciones);
+    }
+    return terminos_condiciones;
+}
+
+function verificacion_de_cuenta() {
+    let edad = parseInt(prompt("Ingrese su edad"));
+    if (edad >= 18 && terminos_condiciones == true) {
+        alert("Acceso concedido")
+    } else {
+        alert("Acceso denegado")
     }
 }
 
-function Valor_signo(){
-    let numero = prompt("ingresar un numero: ")
+//Segundo ejercicio
 
-    if (numero < 0) {
-        alert("el numero es: " + numero + " es negativo")
-    } else if (numero == 0){
-        alert("el numero es: " + numero + " el numero es cero")
+function estudiante() {
+    if (esEstudiante == false) {
+        esEstudiante = true;
+        alert(esEstudiante)
     } else {
-        alert("el numero es: " + numero + " el numero es positivo")
+        esEstudiante = false;
+        alert(esEstudiante);
+    }
+    return esEstudiante;
+
+}
+
+function descuento() {
+    let edad = "";
+    edad = parseInt(prompt("Ingrese su edad: "));
+    if (edad >= 60 || esEstudiante == true){
+        alert("Descuento aplicado")
+    } else {
+        alert("No tienes descuento")
+    }
+
+}
+
+//Tercer Ejercicio
+
+function validar_usuario_contrsena() {
+    
+    let usuario = "";
+    let contrasena = "";
+
+    usuario = prompt("Ingrese su usuario: ");
+    contrasena = prompt("Ingrese su contrseña")
+
+    if (usuario != "" && contrasena != ""){
+        alert("Inicio de sesion exitoso")
+    } else {
+        alert("Error: Debes ingresar usuario y contraseña")
+    }
+
+}
+
+
+//Cuarto ejercicio 
+
+function suministrar_energia() {
+    if (energiaSuficiente  == false) {
+        energiaSuficiente  = true;
+        alert(energiaSuficiente )
+    } else {
+        energiaSuficiente  = false;
+        alert(energiaSuficiente );
+    }
+    return energiaSuficiente ;
+}
+
+function encender_interruptor() {
+    if (interruptorEncendido  == false) {
+        interruptorEncendido  = true;
+        alert(interruptorEncendido )
+    } else {
+        interruptorEncendido  = false;
+        alert(interruptorEncendido );
+    }
+    return interruptorEncendido;
+}
+
+
+function encender_maquina() {
+    if (interruptorEncendido == true && energiaSuficiente == true){
+        alert("Máquina encendida")
+    } else {
+        alert("No se puede encender la máquina")
     }
 }
 
-function Puntaje_juego(){
-    let puntuacion = prompt("ingrese su puntuacion: ")
+//Quinto ejercicio
 
-    if (puntuacion >= 90){
-        alert("Su puntuacion es: " + puntuacion + ", Excelente!")
-    } else if (puntuacion > 70){
-        alert("Su puntuacion es: " + puntuacion + ", Buen trabajo")
+function bloquear_zona() {
+    if (bloqueado  == false) {
+        bloqueado  = true;
+        alert(bloqueado )
     } else {
-        alert("Su puntuacion es: " + puntuacion + ", Necesitas mejorar")
+        bloqueado  = false;
+        alert(bloqueado );
     }
+    return bloqueado ;
+}
+
+function tiene_acceso() {
+    if (tieneCredenciales  == false) {
+        tieneCredenciales  = true;
+        alert(tieneCredenciales )
+    } else {
+        tieneCredenciales  = false;
+        alert(tieneCredenciales );
+    }
+    return tieneCredenciales;
+}
+
+function encender_maquina() {
+    if (tieneCredenciales != false || bloqueado != false){
+        alert("Acceso permitido")
+    } else if (tieneCredenciales != true ||bloqueado != false){
+        alert("Acceso permitido")
+    } else (
+        alert("Acceso denegado")
+    )
 }

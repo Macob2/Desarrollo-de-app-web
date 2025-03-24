@@ -40,3 +40,12 @@ button{
     width: 20vh;
     height: auto;
 }
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    margin: 2vh;
+}
