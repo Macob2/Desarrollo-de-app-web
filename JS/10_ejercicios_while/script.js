@@ -24,7 +24,7 @@ while(hola <= 5){
     goku.push(hola);
     hola++;
     }
-    alert(`los numeros son: ${goku.join(" ")}`);
+    alert(`los numeros son: ${goku.join(" - ")}`);
 }
 
 function ejercicio2(){
@@ -35,7 +35,7 @@ while(adios >= 1){
     array.push(adios);
     adios--;
     }
-alert(`los numeros son: ${array.join(" ")}`);
+alert(`los numeros son: ${array.join(" - ")}`);
 }
 
 
@@ -50,8 +50,10 @@ for (let i = 1; i <= num; ++i){
 }
 
 function ejercicio4(){
+let array = []
 for (let i = 1; i <= 10; ++i)  
 if (i % 2 === 0){
-alert("los numeros pares son: " + i);
+    array.push(i);
+alert(`los numeros pares son: ${array.join(" - ")}`);
 }
 }
