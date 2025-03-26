@@ -48,3 +48,10 @@ for (let i = 1; i <= num; ++i){
     }
     alert(suma);
 }
+
+function ejercicio4(){
+for (let i = 1; i <= 10; ++i)  
+if (i % 2 === 0){
+alert("los numeros pares son: " + i);
+}
+}
