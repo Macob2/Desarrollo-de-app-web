@@ -14,7 +14,7 @@ let imcPeso = parseInt(prompt("ingrese su peso en kilogramos: "))
 let imcaltura = parseInt(prompt("ingrese su altura en centimetros: ")) / 100
 let imc = imcPeso / (imcaltura ** 2)
 
-imc = Number(imc.toFixed(2))
+imc = Number(imc.toFixed(2))  //aproxima los numeros decimales que se imprimen
 if (imc < 18.5){
     alert ("su peso es " + imcPeso + " kilogramos\nSu altura es: " + imcaltura + " Metros\n Su imc es: " + imc + "\nUsted esta bajo en peso.")
 } else if (imc >= 18.5 && imc < 25){
@@ -31,7 +31,7 @@ function calcular(){
 
     let promedio = (nota1 + nota2 + nota3) / 3
 
-    promedio = Number(imc.toFixed(2))
+    promedio = Number(promedio.toFixed(2)) //aproxima los numeros decimales que se imprimen
 
 if (promedio < 1){
     alert("ingrese valores validos")
@@ -41,5 +41,5 @@ if (promedio < 1){
     alert("Su promedio es: " + promedio + "\nUsted a aprobado.")
 }else {
     alert ("Ingrese valores validos.")
-}
+    }
 }
