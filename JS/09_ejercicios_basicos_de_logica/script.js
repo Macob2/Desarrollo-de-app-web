@@ -35,6 +35,11 @@ function calcular(){
 
 if (promedio < 1){
     alert("ingrese valores validos")
-}else if (promedio >= 1 && promedio < 4)
-    alert()
+}else if (promedio >= 1 && promedio < 4){
+    alert("Su nota es: " + promedio + "\nUsted a reprobado.")
+}else if (promedio >= 4 && promedio <=7){
+    alert("Su promedio es: " + promedio + "\nUsted a aprobado.")
+}else {
+    alert ("Ingrese valores validos.")
+}
 }
