@@ -43,17 +43,20 @@ function ejercicio3(){
 
 let num = 5
 let suma = 0    
-for (let i = 1; i <= num; ++i){
+for (let i = 1; i <= num; i++){
     suma += i
     }
     alert(suma);
 }
 
 function ejercicio4(){
-let array = []
-for (let i = 1; i <= 10; ++i)  
-if (i % 2 === 0){
-    array.push(i);
-alert(`los numeros pares son: ${array.join(" - ")}`);
-}
-}
+    let array = []
+    for (let i = 1; i <= 10; i++) {
+    
+        if (i % 2 === 0){
+            array.push(i);
+        } 
+    }
+        alert(`los numeros pares son: ${array.join(" - ")}`);
+    }
+    
