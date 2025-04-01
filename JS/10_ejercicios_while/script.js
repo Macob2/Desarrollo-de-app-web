@@ -40,13 +40,14 @@ alert(`los numeros son: ${array.join(" - ")}`);
 
 
 function ejercicio3(){
-
+let arrn = []
 let num = 5
 let suma = 0    
 for (let i = 1; i <= num; i++){
     suma += i
+    arrn.push(suma);
     }
-    alert(suma);
+    alert(`la suma de los numeros es: ${arrn.join(" - ")}`);
 }
 
 function ejercicio4(){
