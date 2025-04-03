@@ -2,38 +2,51 @@
 * {
     margin: 0;
     padding: 0;
+    
+     /* Ajusta el modelo de caja para incluir el borde y el relleno dentro de las dimensiones del elemento */
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilo para el cuerpo de la página (body) */
 body {
+    /* Fondo con gradiente diagonal */
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #fff;
+
+    /* Diseño de caja flexible (Flexbox) */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    /* Estilo de texto */
     text-align: center;
     padding-top: 80px;
 }
 
 /* Estilo del header */
 header {
+    /* Posicionamiento fijo en la parte superior */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
+
+    /* Alineación y estilo de texto */
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+
+    /* Asegura que el header esté siempre por encima de otros elementos */
+    z-index: 1000; 
 }
 
 header h1 {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* Establece el tamaño de la fuente del h1 en 2.2 veces el tamaño base del documento */
 }
 
 /* Estilo del main */
@@ -47,48 +60,58 @@ main {
     width: 50%;
 }
 
+/* Estilo para el encabezado h1 dentro del elemento main */
 main h1 {
     font-size: 2.5rem;
     margin-bottom: 25px;
+
+    /* Convierte el texto a mayúsculas */ 
     text-transform: uppercase;
+
+    /* Espaciado entre letras */
     letter-spacing: 1.5px;
 }
 
+/* Estilo básico del botón */
 button {
+    /* Estilo de fondo con gradiente */
     background: linear-gradient(90deg, #ff9800, #ff5722);
     border: none;
+
+    /* Estilo de relleno y tamaño */
     padding: 15px 35px;
     font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
+
+    /* Transición suave para los efectos */
     transition: transform 0.2s ease, background 0.3s ease;
     box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
 }
 
+/* Estilo para el estado hover del botón */
 button:hover {
     background: linear-gradient(90deg, #e68900, #e64a19);
     transform: scale(1.05);
 }
 
-#resultado {
-    font-size: 1.7rem;
-    margin-top: 25px;
-    font-weight: bold;
-    color: #ffeb3b;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
 /* Estilo del footer */
 footer {
+    /* Posicionamiento y alineación */
     position: fixed;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+
+    /* Estilo de texto */
     font-size: 1.2rem;
+
+    /* Estilo de fondo y bordes */
     background: rgba(0, 0, 0, 0.7);
     padding: 12px 25px;
     border-radius: 8px;
+    /* Sombra */
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
 }
