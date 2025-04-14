@@ -1,8 +1,8 @@
 console.log("Vinculado correctamente...");
 function uno(){
-    let nu = parseInt(prompt("ingrese un numero"))
-    let n_arr = []
-    let res = 0
+    let nu = parseInt(prompt("ingrese un numero"));
+    let n_arr = [];
+    let res = 0;
 
     // Bucle que solicita al usuario los números a sumar
     for(let i = 1; i <= nu; i++){
@@ -77,7 +77,7 @@ function cinco(){
     resulta += nArr[i]
     }
 // Muestra el resultado de la suma en una alerta
-alert(`la suma de los numeros es ${resulta}`)
+alert(`la suma de los numeros es ${resulta}`);
 }
 
 //Esta función solicita al usuario dos números y un signo de operación matemática (+, -, *, /)
@@ -182,27 +182,92 @@ function diez(){
     alert(`La suma de los primeros ${cantidadIm} números impares es: ${sumaIm}`);
 }
 
-function once(){
-    let numeroIngresado = parseInt(prompt("Ingrese cuantos multiplos de tres quiere sumar"));
-    let ArrayOnce = [];
-    let multiPlo = 1;
-    let Resultado = 0;
-    let multiploTres = 0;
+function once() {
+    let numeroIngresado = parseInt(prompt("Ingrese cuántos múltiplos de 3 quiere sumar"));
 
-    for (let i = 0; i <= numeroIngresado * 3; i += 3){
-        ArrayOnce.push(multiploTres)
-        multiploTres += 3;
+    // Validación, si isNaN(si no es un numero) o si es un numero menor igual a 0, pide al usuario ingresar un valor valido.
+    if (isNaN(numeroIngresado) || numeroIngresado <= 0) {
+        alert("Por favor, ingrese un número válido mayor que 0.");
+        return;
     }
 
-    for (let i = 1; i <= numeroIngresado; i++){
-        let Numero = i * 3;
-        multiPlo ++
-        Resultado += Numero
+    let ArrayOnce = [];
+    let Resultado = 0;
+
+    for (let i = 1; i <= numeroIngresado; i++) {
+        let multiplo = i * 3;
+        ArrayOnce.push(multiplo);
+        Resultado += multiplo;
+    }
+
+    alert(`Los ${numeroIngresado} primeros múltiplos de 3 son:\n${ArrayOnce.join(" - ")}\n\nLa suma de estos es: ${Resultado}`);
 }
-    alert(`los ${numeroIngresado} primeros multiplos de 3 son: ${ArrayOnce.join(" - ")}
-    Y la suma de estos son: ${Resultado}`)
+//Esta función calcula el factorial de un número ingresado por el usuario.
+function doce() {
+    let numeroDoceIngresado = parseInt(prompt("Ingrese el numero para calcular su factorial"))
+    let resultadoDoce = 1;
+
+    for (let i = 1; i <= numeroDoceIngresado; i++){
+        resultadoDoce *= i
+    }
+    alert(`El factorial del numero ingresado es: ${resultadoDoce}`)
 }
 
+//Esta funcion convierte una temperatura de grados Celsius a Fahrenheit.
+function trece() {
+    let celsius = parseInt(prompt("Ingrese una temperatura en grados celsius"))
+    let fahrenheit = 0 + ((celsius * (9/5)) + 32)
+
+    alert(`la temperatura de que usted ingreso es ${celsius}° grados Celsius
+lo cual equivale a ${fahrenheit}° grados Fahrenheit`)
+}
+
+//Lo que hace esta funcion es identificar la palabra más larga dentro de una frase que el usuario ingresa.
+function catorce() {
+    let cadena = prompt("Ingrese una frase separada por espacios")
+    let palabras = cadena.split(" ")
+    let palabraMasLarga = ""
+
+    for(let i = 0; i < palabras.length ; i++) {
+        if (palabras[i].length > palabraMasLarga.length){
+            palabraMasLarga = palabras[i]
+        }
+    }
+
+    alert(`La frase que ingreso es: ${cadena}
+La palabra más larga de la frase que ingreso es: ${palabraMasLarga}`)
+}
+
+//Esta funcion pide al usuario un número y luego encuentra todos los números primos desde el 2 hasta ese número. Finalmente, muestra esos números primos en una alerta.
+function quince() {
+    let limi = parseInt(prompt("Ingrese un numero limite para la impresión: "))
+    let arrayPrimos = []
+
+    if (limi === 0 || limi === 1 || limi < 0) {
+        alert("Ingrese un valor valido")
+    }
+
+    for(let i = 2; i < limi + 1; i++) {
+        if(esPrimo(i)) {
+            arrayPrimos.push(i)
+        }
+    }
+
+    function esPrimo(numeroQui) {
+        for(let goku = 2; goku < numeroQui; j++) {
+            if(numeroQui % goku === 0) {
+                return false;
+            }
+        }
+        return numeroQui !== 1;
+    }
+
+    if(limi === 0 || limi === 1 || limi < 0) {
+        alert("No se genero nada")
+    } else {
+        alert(`Los numeros primos hasta el numero que ingresaste son: ${arrayPrimos.join(" - ")}`)
+    }
+}
 
 // Función para identificar y mostrar los números pares ingresados por el usuario
 function diecisiete() {
