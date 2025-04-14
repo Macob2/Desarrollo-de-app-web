@@ -9,7 +9,7 @@ function funcionPares() {
 
     // Filtrar los números pares
     for (let i = 0; i < arrayFin.length; i++) {
-        if (arrayFin[i] % 2 === 0) {
+        if (arrayFin[i] % 2 == 0) {
             arrayResult.push(arrayFin[i]);
         // console.log(arrayResult.join(" - "));
         }
