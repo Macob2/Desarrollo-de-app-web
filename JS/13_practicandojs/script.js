@@ -254,7 +254,7 @@ function quince() {
     }
 
     function esPrimo(numeroQui) {
-        for(let goku = 2; goku < numeroQui; j++) {
+        for(let goku = 2; goku < numeroQui; goku++) {
             if(numeroQui % goku === 0) {
                 return false;
             }
@@ -267,6 +267,19 @@ function quince() {
     } else {
         alert(`Los numeros primos hasta el numero que ingresaste son: ${arrayPrimos.join(" - ")}`)
     }
+}
+
+function dieciseis(){
+    let cadenaIngresada = prompt("ingrese una cadena de texto(ingrese una frase)");
+    let cadenaFin = cadenaIngresada.split(" ");
+    let arrayCadena ="";
+
+    for(let i = 0; i < palabras.length ; i++) {
+        if (palabras[i].length > palabraMasLarga.length){
+            palabraMasLarga = palabras[i]
+        }
+    }
+
 }
 
 // Función para identificar y mostrar los números pares ingresados por el usuario
