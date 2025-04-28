@@ -1,5 +1,5 @@
 *{
-    
+   
 }
 
 body{
@@ -17,6 +17,9 @@ body{
     width: 70vh;
     height: 30vh;
     border-color: rgba(0, 0, 0, 0.336);
+    margin-left: 4vh;
+
+
 }
 
 .azul{
@@ -24,8 +27,9 @@ body{
     padding: 8vh;
     z-index: 0;
     border-radius: 11px 11px 0px 0px;
-    padding-right: 86vh;
-    margin-left: -12vh;
+    padding-right: 83vh;
+    margin-left: -9vh;
+    display: flex;
 }
 
 .info{
@@ -35,11 +39,13 @@ body{
     padding: 0;
     margin-left: 30px;
     margin-top: -10px;
+    display: flex;
 }
 
 img{
     margin: 5px;
     margin-left: 1px;
+    display: flex;
 }
 
 .titulo{
@@ -50,6 +56,7 @@ img{
 .map{
     height: 3vh;
     margin-top: 3vh;
+    display: flex;
 }
 
 .circle-user{
@@ -57,37 +64,45 @@ img{
     width: 15vh;
     z-index: 1;
     margin-top: -8vh;
-    margin-left:175px;
+    margin-left:32vh;
     border-radius: 50%;
+    display: flex;
+}
+
+.Nombre-perfil{
+    margin-left: 30vh;
 }
 
 .info-user{
     font-size: 3vh;
     margin: 0;
-    margin-top: -17px;
-    margin-left: 13vh;
+    margin-top: -2vh;
+    margin-left: 17vh;
+    display: flex;
 }
 
 .info-user-2{
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin: 0;
     margin-top: 7px;
-    margin-left: 5vh;
+    margin-left: 4vh;
 }
 
 .locacion{
     font-size: 3vh;
-    margin-left: 17vh;
-    margin-top: 3vh;
+    margin-left: 22vh;
     color: #777777;
+    display: flex;
+    margin-top: -1vh;
 }
 
 h2{
     margin: 0;
     margin-left: 25vh;  
-    margin-top: 6px;
+    margin-top: 1vh;
     padding: 0;
     font-size: 4vh;
+    display: flex;
 }
 
 #baseline{
@@ -99,28 +114,32 @@ h2{
 }
 .gear{
     display: flex;
-    width: 2vh;
-    margin-left: -1px;
+    width: 4vh;
+    margin-left: 4vh;
 }
 
 #container{
     margin-top: -70vh;
     margin-bottom: -75vh;
     padding-right: 12vh;
-    padding-left: 12vh;
-    border: 5px;
+    padding-left: 5vh;
+    border: 5vh;
     height: 50vh;
     align-self: center;
-    margin-right: 30vh;
+    margin-right: 100vh;
+    margin-left: 40vh;
     box-shadow: rgba(0, 0, 0, 0.459) 3px 3px 3px 3px;
+    display: flex;
 }
 
 h3{
     font-size: 3vh;
+    display: flex;
 }
 
 a{ 
     font-size: 3vh;
+    display: flex;
 }
 
 body{
@@ -128,18 +147,23 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    padding-right: 30vh;
+    height: 120vh;
+    width: 178vh;
 }
 
 .nav{
     display: flex;
     flex-direction: row;
-    width: 215vh;
+    width: 200vh;
     height: 10vh;
     background-color: #333333;
     justify-content: center;
     align-items: start;
     margin-top: -1vh;
     padding-bottom: 8px;
+    margin-left: 29vh;
+    padding-right: 13vh;
 }
 
 .nav-links{
@@ -149,6 +173,18 @@ body{
     justify-content: end;
     width: 185vh;  
     align-items: center;
+    margin-right: -16vh;
+}
+
+.nav-links:hover{
+    flex-direction: row;
+    display: flex;
+    margin: 10px;
+    justify-content: end;
+    width: 185vh;  
+    align-items: center;
+    margin-right: -19vh;
+    cursor: pointer;
 }
 
 li{
@@ -156,12 +192,15 @@ li{
     list-style: none;
     margin: 10px;
     padding: 2px;
+    display: flex;
+    margin-right: 5vh;
 }
 
 a{
     color: white;
     text-decoration: none;
     font-size: 2.5vh;
+    display: flex;
 }
 
 button{
@@ -174,17 +213,20 @@ button{
     border: solid rgba(0, 0, 0, 0.438) 2px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
 }
 
 h1{
     color: white;
     margin-left: 15px;
+    display: flex;
 }
 
 .btn{
     padding-right: 1vh;
     margin-right: 1vh;
     border-radius: 2vh;
+    display: flex;
 }
 
 .container-,#container{
@@ -196,7 +238,12 @@ h1{
 .conexiones-r{
     margin-top: 75vh;
     box-shadow: rgba(0, 0, 0, 0.459) 4px 4px 4px 4px;
-    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: -68vh;
+    width: 50vh;
+    height: 30vh;
+    border-radius: 2vh 2vh 2vh 2vh;
 }
 
 #all-container{
@@ -204,6 +251,7 @@ h1{
     flex-direction: row;
     margin-top: -70vh;
     height: 200vh;
+    padding-left: -40vh;
 }
 
 .perfiles{
@@ -222,16 +270,18 @@ h1{
 
 .nombre{
     vertical-align: middle;
-    margin-left: -1vh;
+    margin-left: 1vh;
     margin-top: 2.7vh;
     font-size: 2.5vh;
+    display: flex;
 }
 
 .foto-perfil{
     height: 7vh;
     border-radius: 50%;
     margin-right: 3vh;
-    margin-left: 4vh;
+    margin-left: 8vh;
+    display: flex;
 }
 
 .foto-perfil:hover{
@@ -240,6 +290,7 @@ h1{
     margin-right: 3vh;
     margin-left: 4vh;
     cursor: pointer;
+    display: flex;
 }
 
 
@@ -247,6 +298,7 @@ h1{
     height: 3vh;
     border-radius: 50%;
     margin-right: 10px;
+    display: flex;
 }
 
 .requests{ 
@@ -266,11 +318,12 @@ h1{
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 2vh;
+    font-size: 2.5vh;
+    display: flex;
 }
 
 .text-connections{
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: #ffff;
     padding: 7px;
     border-radius: 10px;
@@ -278,10 +331,11 @@ h1{
     padding-right: 5px;
     color: #3f9adc;
     border: solid #3f9adc 2px;
+    display: flex;
 }
 
 .text-connections:hover{
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: #ffff;
     padding: 7px;
     border-radius: 10px;
@@ -290,6 +344,7 @@ h1{
     color: #3f9adc;
     border: solid #3f9adc 2px;
     cursor: pointer;
+    display: flex;
 }
 
 
@@ -301,12 +356,18 @@ h1{
 
 .y-conexiones{
     margin-top: 6vh;
-    height: 47vh;
+    flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.459) 4px 4px 4px 4px;
+    display: flex;
+    width: 50vh;
+    height: 52vh;
+    margin-left: -68vh;
+    border-radius:  2vh 2vh 2vh;
 }
 
 .link-profile{
     color: #3f9adc;
+    display: flex;
 }
 
 #container-1{
@@ -325,18 +386,21 @@ h1{
     padding-bottom: 10px;
     padding-left: 30px;
     color: white;
+    display: flex;
 }
 
 .curso-titulo{
     padding-left: 30px;
     margin-top: -2vh;
     font-size: 3vh;
+    display: flex;
 }
 
 .more-info{
     padding-left: 30px;
     margin-top: -0;
     font-size: 3vh;
+    display: flex;
 }
 
 .check{
