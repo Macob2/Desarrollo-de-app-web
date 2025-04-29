@@ -15,11 +15,10 @@ body{
     display: flex;
     flex-direction: column;
     width: 70vh;
-    height: 30vh;
+    height: 70vh;
     border-color: rgba(0, 0, 0, 0.336);
-    margin-left: 4vh;
-
-
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 .azul{
@@ -27,8 +26,8 @@ body{
     padding: 8vh;
     z-index: 0;
     border-radius: 11px 11px 0px 0px;
-    padding-right: 83vh;
-    margin-left: -9vh;
+    padding-right: 99vh;
+    margin-left: -15vh;
     display: flex;
 }
 
@@ -150,6 +149,7 @@ body{
     padding-right: 30vh;
     height: 120vh;
     width: 178vh;
+    background-color: #edf0f2;
 }
 
 .nav{
@@ -240,10 +240,11 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.459) 4px 4px 4px 4px;
     display: flex;
     flex-direction: column;
-    margin-left: -68vh;
-    width: 50vh;
+    margin-left: -76vh;
+    width: 64vh;
     height: 30vh;
     border-radius: 2vh 2vh 2vh 2vh;
+    background-color: #ffffff;
 }
 
 #all-container{
@@ -284,16 +285,6 @@ h1{
     display: flex;
 }
 
-.foto-perfil:hover{
-    height: 7vh;
-    border-radius: 50%;
-    margin-right: 3vh;
-    margin-left: 4vh;
-    cursor: pointer;
-    display: flex;
-}
-
-
 .botones{
     height: 3vh;
     border-radius: 50%;
@@ -320,6 +311,7 @@ h1{
     padding-right: 5px;
     font-size: 2.5vh;
     display: flex;
+    font-weight: bold;
 }
 
 .text-connections{
@@ -355,14 +347,15 @@ h1{
 }
 
 .y-conexiones{
-    margin-top: 6vh;
+    margin-top: 5vh;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.459) 4px 4px 4px 4px;
     display: flex;
-    width: 50vh;
+    width: 64vh;
     height: 52vh;
-    margin-left: -68vh;
-    border-radius:  2vh 2vh 2vh;
+    margin-left: -76vh;
+    border-radius:  3vh 3vh 3vh 3vh;
+    background-color: #ffffff;
 }
 
 .link-profile{
@@ -406,7 +399,7 @@ h1{
 .check{
     display: flex;
     width: 4vh;
-    margin-left: 3vh;
+    margin-left: 12vh;
     height: 4vh;
     margin-top: 2vh;
 }
@@ -414,7 +407,7 @@ h1{
 .check:hover{
     display: flex;
     width: 4vh;
-    margin-left: 3vh;
+    margin-left: 12vh;
     height: 4vh;
     margin-top: 2vh;
     cursor: pointer;
