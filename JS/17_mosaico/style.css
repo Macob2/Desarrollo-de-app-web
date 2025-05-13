@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: solid white 3vh;
+}
+
+body{
+    padding: 0 3vh;
+    outline: solid white 3vh;
+}
+
+div{
+    background-color: #B3B5B4;
+}
+
+.left-up, .left-down, right-left, .right-right{
+    background-color: white;
+}
+
+.all-container{
+    display: flex;
+    height: 100vh;
+}
+
+.left-all{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.right-all{
+    flex: 1;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.left-up{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.c3x4{
+    flex: 3;
+    height: 30vh;
+}
+
+.c1x4{
+    flex: 4;
+    height: 20vh;
+    outline: 0;
+}
+
+.c1x1{
+    flex: 1;
+    outline: white solid 1.5vh;
+    height: 25vh;
+    width: 25vh;
+}
+
+.container-c3x4_c1x4{
+    flex: 4;
+    padding-top: 3vh;
+}
+
+.container-c1x1{
+    flex: 1;
+    padding-top: 3vh;
+}
+
+.left-down{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.c2x5{
+    flex: 1;
+    height: 47vh;
+    width: 10vh;
+}
+
+.c2x4{
+    flex: 1;
+    height: 25vh;
+    width: 75vh;
+}
+
+.container-c2x4{
+    flex: 2;
+    display: flex;
+    height: 47vh;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+
+.right-all{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-right{
+    flex: 2;
+}
+
+
+.c1x2{
+    height: 27vh;
+    flex: 1;
+    margin-top: 3vh;
+    outline: solid white ;
+}
+
+.c3x7{
+    height: 67vh;
+    flex: 1;
+}
+
+.c3x5{
+    flex: 1;
+    height: 50vh;
+    margin-top: 3vh;
+}
+
+.c1x5{
+    outline: solid white 2.5vh;
+}
