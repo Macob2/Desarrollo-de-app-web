@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace de bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Like</title>
+</head>
+
+<body class=" d-flex justify-content-center row">
+    <nav class="navbar bg-dark border-bottom border-body d-flex me-5 ms-5  ps-5 w-75 p-3" data-bs-theme="dark">
+        <div class="container-fluid ">
+            <span class="navbar-text text-light-emphasis fs-1 fw-semibold">
+                Network
+            </span>
+        </div>
+    </nav>
+
+    <main class="container ">
+        <section class="row">
+            <section class="col-6 d-flex justify-content-center ms-5 mt-5 pb-5">
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="https://www.dustloop.com/wiki/images/f/f0/LCB_Gregor_Icon.png " class="card-img-top h-50 d-inline-block mx-auto p-2" style="width: 20vh;" alt="...">
+                    <div class="card-body m">
+                        <h5 class="card-title ms-5">Sinner #13</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </section>
+            <section class="col-3">
+                        <section class="col">
+                <div class="card mt-5">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3 class="mb-6">Neil M</h3>
+                        <span class="contenedor_de_me_gusta" id="Contador"> 9 like(s) </span>
+                        <a href="#" class="btn btn-warning btn-sm" onclick="Sumar_Likes()"> Me gusta </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"> I just set up this new discord bot, let me know what you all think. <a href="URL">Link</a> </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col">
+                <div class="card mt-5">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3 class="mb-6">Algun Usuario</h3>
+                        <span class="contenedor_de_me_gusta" id="Contador-2"> 12 like(s) </span>
+                        <a href="#" class="btn btn-warning btn-sm" onclick="Sumar_Likes2()"> Me gusta </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"> Esto es un texto de relleno, puedes decir lo que gustes. </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col">
+                <div class="card mt-5">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3 class="mb-6">Algun Usuario</h3>
+                        <span class="contenedor_de_me_gusta" id="Contador-3"> 9 like(s) </span>
+                        <a href="#" class="btn btn-warning btn-sm" onclick="Sumar_Likes3()"> Me gusta </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"> Esto es un texto de relleno, puedes decir lo que gustes. </p>
+                    </div>
+                </div>
+            </section>
+            </section>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <!-- Enlace de bootsrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
