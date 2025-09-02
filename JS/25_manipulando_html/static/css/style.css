@@ -1,0 +1,219 @@
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: #1f3a60; /* azul marino */
+    padding: 12px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover {
+    color: #1f7a8c; /* azul verdoso */
+    border-bottom: 2px solid #1f7a8c;
+}
+
+/* ---------- General ---------- */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef1f6; /* gris azulado suave */
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+/* ---------- Contenedor principal ---------- */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Títulos ---------- */
+h1, h2 {
+    text-align: center;
+    color: #1f3a60; /* azul marino */
+    margin-bottom: 15px;
+}
+
+/* ---------- Formulario ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #1a2a3a;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    font-size: 14px;
+    background: #f9fbfd;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #1f7a8c; /* azul verdoso */
+    outline: none;
+    box-shadow: 0px 0px 6px rgba(31, 122, 140, 0.4);
+}
+
+/* ---------- Radio y Checkbox ---------- */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* ---------- Botones ---------- */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#submitBtn {
+    background: #1f7a8c; /* azul verdoso */
+    color: white;
+}
+
+#submitBtn:hover {
+    background: #155d66;
+}
+
+#limpiarBtn {
+    background: #adb5bd; /* gris */
+    color: white;
+}
+
+#limpiarBtn:hover {
+    background: #6c757d;
+}
+
+/* ---------- Mensajes ---------- */
+.error-message {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+
+#saludo {
+    margin-top: 15px;
+    padding: 10px;
+    background: #e8f8f2;
+    border: 1px solid #28a745;
+    border-radius: 6px;
+    color: #19692c;
+    font-weight: bold;
+}
+
+#errorMsg {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fdecea;
+    border: 1px solid #d9534f;
+    border-radius: 6px;
+    color: #a94442;
+    font-weight: bold;
+}
+
+#resumenJornadas {
+    margin-top: 15px;
+    font-style: italic;
+    color: #444;
+}
+
+/* ---------- Tabla ---------- */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+thead {
+    background: #1f3a60; /* azul marino */
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f5f9;
+}

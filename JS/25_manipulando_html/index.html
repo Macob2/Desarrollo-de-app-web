@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiante</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">Registro Estudiantes</h2>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Estadísticas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Registro de Estudiante</h1>
+        
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2">
+                <span class="error-message" id="nombreError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="14" max="100" required>
+                <span class="error-message" id="edadError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Seleccione un curso</option>
+                    <option value="3° Medio">3° Medio</option>
+                    <option value="4° Medio">4° Medio</option>
+                </select>
+                <span class="error-message" id="cursoError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label>Jornada:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="jornada" value="Mañana" required>
+                        Mañana
+                    </label>
+                    <label>
+                        <input type="radio" name="jornada" value="Tarde">
+                        Tarde
+                    </label>
+                </div>
+                <span class="error-message" id="jornadaError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="aceptaReglamento" name="aceptaReglamento" required>
+                    Acepto el reglamento del instituto
+                </label>
+                <span class="error-message" id="reglamentoError"></span>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit">Registrar</button>
+                <button type="button" id="limpiarBtn">Limpiar</button>
+            </div>
+        </form>
+        
+        <div class="resultados">
+            <p class="resultado" id="saludo"></p>
+            <p class="error" id="errorMsg"></p>
+            <p class="resumen" id="resumenJornadas"></p>
+        </div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
