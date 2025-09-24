@@ -6,10 +6,51 @@
     <title>Ejemplo - This</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-
+<nav> 
+    <h1>Dojonary</h1> 
+    <input type="text" placeholder="Search" id="search">
+    <button onclick="TurnOff(this)"> Login </button>
+</nav>
 <body>
-    <div class="container">
-        <div class="row">
+    <main class="container">
+        <section class="izquierda">
+            <section class="arriba">
+                <div class="informacion-post">
+                    <h2>Ninja</h2>
+                    <h3>noun</h3>
+                    <p>Plural: ninjas</p>
+                    <button class="boton-postear">13 likes</button>
+                </div>
+                <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+            </section>
+            <section class="abajo">
+                <div class="informacion-post">
+                    <h2>Ninja</h2>
+                    <h3>noun</h3>
+                    <p>Plural: ninjas</p>
+                    <button class="boton-postear">37 likes</button>
+                </div>
+                <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen-</a>like focus</p>
+                </div>
+            </section>
+        </section>
+        <section class="derecha">
+            <div class="definicion">
+                <h2>Dojonary is defined by you</h2>
+                <button onclick="hide(this)">add definition</button>
+            </div>
+        </section>
+    <div class="container-2">
+        <div class="column">
+            <button onclick="example(this)">
+                Hazme click
+            </button>
+            <button onclick="TurnOff(this)"> On </button>
+            <button onclick="TurnOff(this)"> On </button>
+    </div>
+
+    <div class="container-3">
+        <div class="column">
             <button onclick="example(this)">
                 Hazme click
             </button>
@@ -18,6 +59,7 @@
             <button onclick="TurnOff(this)"> On </button>
             <button onclick="hide(this)"> Eliminar </button>
     </div>
+    </main>
 </body>
     <script src="static/js/script.js"></script>
 </html>

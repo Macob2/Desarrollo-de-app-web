@@ -3,10 +3,10 @@ function example(elemento){
 }
 //Creacion de funcion TurnOff
 function TurnOff(element){
-    if (element.innerText == "On"){
-        element.innerText = "Off";
+    if (element.innerText == "Login"){
+        element.innerText = "Logout";
     }else{
-        element.innerText = "On"
+        element.innerText = "Login"
     }
 }
 
@@ -14,3 +14,5 @@ function TurnOff(element){
 function hide(element) {
     element.remove();
 }
+
+function 
