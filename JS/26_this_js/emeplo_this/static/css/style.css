@@ -101,7 +101,7 @@ main{
 .informacion-post button{
     background-color: #FFD966;
     padding: 0.5vh 1.5vh;
-    margin-top: 2vh;
+    margin-top: 1vh;
     cursor: pointer;
     box-shadow: 2px 2px black;
 }
