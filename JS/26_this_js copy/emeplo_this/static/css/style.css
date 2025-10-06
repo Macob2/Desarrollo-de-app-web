@@ -1,8 +1,8 @@
 *{
+    outline: solid black;
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    outline: solid black;
 }
 
 body{
@@ -65,16 +65,26 @@ body{
     gap: 5vh;
 }
 
+.placeholder{
+    outline: solid black;
+    display: flex;
+    width: 93vh;
+    height: 50vh; 
+}
+
 .btn-sub{
     display: flex;
     background-color: #9900ff;
     color: white;
     cursor: pointer;
-    padding-right: 10vh;
+    padding: 1.5vh;
     box-shadow: 6px 6px rgb(22, 22, 22);
     outline: solid black;
 }
 
-col-r{
-
+.col-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10vh;
 }
