@@ -1,5 +1,4 @@
 *{
-    outline: solid black;
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -66,8 +65,8 @@ body{
 .placeholder{
     outline: solid black;
     display: flex;
-    width: 98vh;
-    height: 54vh; 
+    width: 95.6vh;
+    height: 54.8vh; 
 }
 
 .btn-sub{
@@ -84,8 +83,8 @@ body{
 .col-r{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 10vh;
+    justify-content: space-between;
+    margin-left: 3vh;
 }
 
 .user{
@@ -95,4 +94,15 @@ body{
 .user-name{
     color:#9900ff;
     margin-top: 2vh;
+}
+
+.video-title {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    text-align: start;      /* Centra el texto dentro del contenedor */
+    margin-left: 2vh;
+}
+.video-small{
+    display: flex;  
 }
