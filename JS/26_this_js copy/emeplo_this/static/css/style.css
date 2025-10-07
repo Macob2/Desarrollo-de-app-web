@@ -47,10 +47,6 @@ body{
     margin-top: 4vh;
 }
 
-.col-l{
-
-}
-
 .start{
     gap: 20px;
     display: flex;
@@ -62,14 +58,16 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5vh;
+    gap: 3vh;
+    justify-content: space-evenly;
+    
 }
 
 .placeholder{
     outline: solid black;
     display: flex;
-    width: 93vh;
-    height: 50vh; 
+    width: 98vh;
+    height: 54vh; 
 }
 
 .btn-sub{
@@ -77,7 +75,8 @@ body{
     background-color: #9900ff;
     color: white;
     cursor: pointer;
-    padding: 1.5vh;
+    padding: 0.5vh;
+    margin: 0.5vh;
     box-shadow: 6px 6px rgb(22, 22, 22);
     outline: solid black;
 }
@@ -87,4 +86,13 @@ body{
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10vh;
+}
+
+.user{
+    display: flex;
+}
+
+.user-name{
+    color:#9900ff;
+    margin-top: 2vh;
 }
