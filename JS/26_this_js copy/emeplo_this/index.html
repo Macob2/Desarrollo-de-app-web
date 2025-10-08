@@ -16,7 +16,7 @@
         <div class="nav-container">
             <h1>VideoLab</h1>
             <input type="text" placeholder="Search" name="query" class="search">
-            <button class="btn">Login</button>
+            <button onclick="LogIn_Out(this)" class="btn">Login</button>
         </div>
     </div>
 
@@ -28,19 +28,19 @@
 
             <!-- this is a placeholder replace it with a real video -->
             <figure class="placeholder">
-                <video width="610" height="345" controls
+                <video  width="610" height="343" autoplay loop controls id="Main_video" src="resources/videos/Esta fue la PEOR IDEA que HEMOS TENIDO 2 - PURPLEVENOM (720p, h264).mp4"
                 onmouseover="this.play()"
-                onmouseout="this.pause()"><source src="resources/videos/Esta fue la PEOR IDEA que HEMOS TENIDO 2 - PURPLEVENOM (720p, h264).mp4" type="video/mp4">
+                onmouseout="this.pause()"></video>
             </figure>
 
             <!-- video info -->
             <div class="row">
                 <div class="start">
-                    <h1>Example Video Title</h1>
+                    <h1>Esta fue la PEOR IDEA que HEMOS TENIDO 2</h1>
                     <h3>1.3K Views | June, 18, 2021</h3>
                     <div class="user">
                         <img src="resources/images/4159471.png" width="50" height="50" alt="user-circle" class="avatar-s">
-                        <span class="user-name">Example User Name</span>
+                        <span class="user-name">PURPLEVENOM</span>
                     </div>
                 </div>
                 <button class="btn-sub">Subscribe</button>
@@ -55,31 +55,31 @@
             <h3 class="sub-header">Up Next</h3>
             <hr>
             <div class="video-small">
-                <video width="140" height="80" controls
+                <video onclick="cambioVideo(this)" width="140" height="80"  src="resources/videos/7667380-uhd_3840_2160_30fps.mp4" id="Second_video"
                 onmouseover="this.play()"
-                onmouseout="this.pause()"><source src="resources/videos/7667380-uhd_3840_2160_30fps.mp4" type="video/mp4"></video>
-                <span class="video-title">Not a Rick Roll</span>
+                onmouseout="this.pause()"></video>
+                <span id="titulo" class="video-title">Not a Rick Roll</span>
             </div>
 
             <div class="video-small">
-                <video width="140" height="80" controls
+                <video onclick="cambioVideo(this)" width="140" height="80"  src="resources/videos/3869109-uhd_3840_2160_30fps.mp4" id="Third_video"
                 onmouseover="this.play()"
-                onmouseout="this.pause()"><source src="resources/videos/3869109-uhd_3840_2160_30fps.mp4" type="video/mp4"></video>
-                <span class="video-title">10 Facts About ET's Cat!</span>
+                onmouseout="this.pause()"></video>
+                <span id="titulo" class="video-title">10 Facts About ET's Cat!</span>
             </div>
 
             <div class="video-small">
-                <video width="140" height="80" controls
+                <video onclick="cambioVideo(this)" width="140" height="80"  src="resources/videos/8511817-uhd_3840_2160_25fps.mp4" id="Fourth_video"
                 onmouseover="this.play()"
-                onmouseout="this.pause()"><source src="resources/videos/8511817-uhd_3840_2160_25fps.mp4" type="video/mp4"></video>
-                <span class="video-title">5 Cosplay Tips</span>
+                onmouseout="this.pause()"></video>
+                <span id="titulo" class="video-title">5 Cosplay Tips</span>
             </div>
 
             <div class="video-small">
-                <video width="140" height="80" controls
+                <video onclick="cambioVideo(this)" width="140" height="80"  src="resources/videos/2759484-uhd_3840_2160_30fps.mp4" id="Fifth_video"
                 onmouseover="this.play()"
-                onmouseout="this.pause()"><source src="resources/videos/2759484-uhd_3840_2160_30fps.mp4" type="video/mp4"></video>
-                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+                onmouseout="this.pause()"></video>
+                <span id="titulo" class="video-title">Boy Battles Dinobot in Thunderdome</span>
             </div>
 
         </div>
@@ -87,6 +87,6 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
