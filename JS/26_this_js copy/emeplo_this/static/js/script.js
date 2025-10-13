@@ -7,11 +7,22 @@ function LogIn_Out(element){
 }
 
 function cambioVideo(element){
-    let videoMain = document.getElementById("Main_video");
-    let sourceMain = videoMain.src;
-    videoMain.src = element.src;
-    element.src = sourceMain;
-    let cambioTitulo = document.getElementById("titulo")
-    let titulopequeno = element.nextElementSibling;
-    cambioTitulo.textContent = titulopequeno.textContent; 
+    const videoMain = document.getElementById("Main_video");
+    let videoPequeno = element.src;
+    let rutaMain = videoMain.src;
+
+    videoMain.src = videoPequeno;
+    element.src = rutaMain;
+
+
+    //cambio de titulo
+    const textoMain = document.getElementById("textoMain")
+    let contenidoTextoMain = textoMain.textContent;
+
+    const titulopequeno = element.nextElementSibling;
+    let contenidoTextoPequeno = titulopequeno.textContent; 
+
+    textoMain.textContent = contenidoTextoPequeno;
+    titulopequeno.textContent = contenidoTextoMain; 
 }
+
