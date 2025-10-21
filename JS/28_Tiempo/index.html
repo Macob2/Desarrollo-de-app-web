@@ -17,17 +17,17 @@
     <div class="nav">
         <h1 class="titulo-grande">Dojoweather</h1>
         <ul class="Ciudades">
-            <li>Burbank</li>
-            <li>Chicago</li>
-            <li>Dallas</li>
+            <li><a onclick="loading()" href="#">Burbank</a></li>
+            <li><a onclick="loading()" href="#">Chicago</a></li>
+            <li><a onclick="loading()" href="#">Dallas</a></li>
         </ul>
     </div>
 
     <div class="San_jose">
         <h1 class="titulo-grande-SanJose">San Jose</h1>
         <h3>Show temperature in</h3>
-        <select name="lista" id="">
-            <option value="celcius" selected>°C</option>
+        <select id="lista" onchange="convertir_temp()">
+            <option value="celsius">°C</option>
             <option value="fahrenheit">°F</option>
         </select>
     </div>
@@ -35,54 +35,55 @@
     <!-- main content -->
     <div class="flex-container">
         <ul class="Tarjetas_dias">
-        <div class="today">
-            <h1 class="titulo-pequeno">Today</h1>
-            <img src="resources/images/some_rain.png" width="200" height="200" alt="rain" class="some_rain">
-            <h3>Some rain</h3>
-    <div> 
-        <span class="max-temp">24°</span>
-        <span class="min-temp">18°</span>
-    </div>
-        </div>
+            <div class="today">
+                <h1 class="titulo-pequeno">Today</h1>
+                <img src="resources/images/some_rain.png" width="200" height="200" alt="rain" class="some_rain">
+                <h3>Some rain</h3>
+                <div class="temp-container">
+                    <span id="max_temp">24°</span>
+                    <span id="min_temp">18°</span>
+                </div>
+            </div>
 
-        <div class="tomorrow">
-            <h1 class="titulo-pequeno">Tomorrow</h1>
-            <img src="resources/images/some_sun.png" width="200" height="200" alt="sun" class="some_sun">
-            <h3>Some sun</h3>
-    <div> 
-        <span class="max-temp">27°</span>
-        <span class="min-temp">19°</span>
-    </div>
-        </div>
-
-
-        <div class="friday">
-            <h1 class="titulo-pequeno">Friday</h1>
-            <img src="resources/images/some_clouds.png" width="200" height="200" alt="cloud" class="some_clouds">
-            <h3>Some cloud</h3>
-    <div> 
-        <span class="max-temp">21°</span>
-        <span class="min-temp">16°</span>
-    </div>
-        </div>
+            <div class="tomorrow">
+                <h1 class="titulo-pequeno">Tomorrow</h1>
+                <img src="resources/images/some_sun.png" width="200" height="200" alt="sun" class="some_sun">
+                <h3>Some sun</h3>
+                <div class="temp-container">
+                    <span id="max_temp_2">27°</span>
+                    <span id="min_temp_2">19°</span>
+                </div>
+            </div>
 
 
-        <div class="saturday">
-            <h1 class="titulo-pequeno">Saturday</h1>
-            <img src="resources/images/some_sun.png" width="200" height="200" alt="sun" class="some_sun">
-            <h3>Some sun</h3>
-    <div> 
-        <span class="max-temp">26°</span>
-        <span class="min-temp">21°</span>
-    </div>
-        </div>
+            <div class="friday">
+                <h1 class="titulo-pequeno">Friday</h1>
+                <img src="resources/images/some_clouds.png" width="200" height="200" alt="cloud" class="some_clouds">
+                <h3>Some cloud</h3>
+                <div class="temp-container">
+                    <span id="max_temp_3">21°</span>
+                    <span id="min_temp_3">16°</span>
+                </div>
+            </div>
+
+
+            <div class="saturday">
+                <h1 class="titulo-pequeno">Saturday</h1>
+                <img src="resources/images/some_sun.png" width="200" height="200" alt="sun" class="some_sun">
+                <h3>Some sun</h3>
+                <div class="temp-container">
+                    <span id="max_temp_4">26°</span>
+                    <span id="min_temp_4">21°</span>
+                </div>
+            </div>
         </ul>
 
-        <div class="cookies">
+        <div id="cookies" class="cookies">
             <img src="resources/images/cookie.png" width="50" height="50" alt="cookies" class="cookie">
             <h1 class="titulo-cookies">Stop! Cookie time</h1>
-            <h4>We use cookies (sadly not edible ones) to personalize content and ads, to provide social media features and analyse our trafiic. <a href="#">Read more...</a></h4>
-            <button class="aceptar-cookies">I Accept</button>
+            <h4>We use cookies (sadly not edible ones) to personalize content and ads, to provide social media features
+                and analyse our trafiic. <a href="#">Read more...</a></h4>
+            <button class="aceptar-cookies" onclick="esconder()">I Accept</button>
         </div>
     </div>
 

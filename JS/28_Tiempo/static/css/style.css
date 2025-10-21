@@ -1,10 +1,10 @@
-/*
+/*======================================================
  * Archivo: static/css/style.css
- * Descripción: Estilos para DojoWeather replicando la imagen, usando exclusivamente vh.
- * Ajustes para centrar tarjetas, aumentar altura y fijar cookies al final.
- */
+ * Descripción: Estilos para Dojoweather usando solo vh.
+ * Corregido: Alineación vertical de temperaturas.
+ *======================================================*/
 
-/* Estilos Generales y Reseteo */
+/* --- Estilos Base y Reseteo --- */
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -18,19 +18,8 @@ body {
     align-items: center;
     background-color: #f8f8f8;
     width: 100%; 
-    /* ¡Usamos min-height: 100vh para asegurar que el cuerpo ocupe todo el alto del viewport! */
-    min-height: 100vh;
+    min-height: 100vh; /* Ocupa la altura completa del viewport */
     padding: 0;
-}
-
-/* Contenedor principal que centra la mayoría del contenido */
-.content-wrapper {
-    width: 100%;
-    /* Simulamos el contenedor central de la página */
-    max-width: 180vh; 
-    margin: 0 auto;
-    padding: 0 3vh; /* Padding horizontal para el contenido */
-    /* Este div NO incluye el footer de cookies */
 }
 
 /* --- Barra de Navegación (Nav) --- */
@@ -64,18 +53,19 @@ body {
 }
 
 .Ciudades li:first-child {
-    font-weight: 800; 
+    font-weight: 800; /* Ciudad activa */
 }
 
 .Ciudades li:hover {
     color: #3b82f6;
 }
 
-/* --- Sección de San Jose (Encabezado principal) --- */
+/* --- Encabezado de Ciudad (San Jose) --- */
 .San_jose {
-    width: 60%;
+    width: 90%; 
+    max-width: 160vh; 
     padding: 3vh 0;
-    margin-top: 2vh;
+    margin: 2vh auto 0; 
     border-bottom: 0.4vh solid black; 
     display: flex;
     align-items: center;
@@ -90,7 +80,7 @@ body {
 .San_jose h3 {
     font-size: 2.2vh; 
     font-weight: normal;
-    margin-left: 65vh;
+    margin: 0 1vh 0 auto; 
     white-space: nowrap;
 }
 
@@ -103,24 +93,29 @@ body {
     min-width: 5vh;
 }
 
-/* --- Contenido Principal (Tarjetas del Pronóstico) --- */
+/* --- Contenedor de Pronóstico y Tarjetas --- */
 .flex-container {
-    width: 100%;
+    width: 90%; 
+    max-width: 160vh; 
+    margin: 0 auto; 
     padding: 2vh 0;
+    flex: 1 0 auto; 
+    display: flex;
+    flex-direction: column;
 }
 
 .Tarjetas_dias {
     list-style: none;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: center; 
+    justify-content: center; /* Centra el grupo de tarjetas */
     gap: 3vh; 
     margin-bottom: 5vh; 
 }
 
-/* Estilos para cada tarjeta de pronóstico */
+/* Estilos de cada tarjeta de día */
 .today, .tomorrow, .friday, .saturday {
-    /* AJUSTE CLAVE: Aumentamos el flex-basis para hacer las tarjetas más altas */
+    /* Eliminamos la configuración Flexbox vertical de las tarjetas */
     flex: 0 0 30vh; 
     max-width: 35vh; 
     text-align: center;
@@ -130,6 +125,8 @@ body {
     border-radius: 0.8vh;
     box-shadow: 0.2vh 0.2vh 0.1vh rgba(0, 0, 0, 0.3); 
     min-width: 30vh; 
+    /* Padding inferior más pequeño para dar más espacio a las temperaturas */
+    padding-bottom: 1.5vh; 
 }
 
 .titulo-pequeno {
@@ -139,7 +136,6 @@ body {
 }
 
 .Tarjetas_dias img {
-    /* Tamaño de imagen más grande */
     width: 14vh;
     height: 14vh;
     margin: 1vh 0;
@@ -149,36 +145,35 @@ body {
 .Tarjetas_dias h3 {
     font-size: 2.2vh; 
     font-weight: normal;
-    margin-bottom: 2.5vh;
+    /* Reducimos el margen inferior para que el div de temperatura se acerque al borde */
+    margin-bottom: 0.5vh; 
 }
 
-/* Contenedor de Temperaturas */
-.today > div, .tomorrow > div, .friday > div, .saturday > div {
+/* --- Contenedor de Temperaturas --- */
+.temp-container { 
     display: flex;
     justify-content: center;
     gap: 4vh; 
     padding: 0 1vh;
 }
 
-.max-temp {
+#max_temp, #max_temp_2, #max_temp_3, #max_temp_4 {
     color: #FF0000; 
     font-size: 3vh; 
     font-weight: 700;
 }
 
-.min-temp {
+#min_temp, #min_temp_2, #min_temp_3, #min_temp_4 {
     color: #0000FF; 
     font-size: 3vh; 
     font-weight: 700;
 }
 
 /* --- Aviso de Cookies (Footer) --- */
-
-/* AJUSTE CLAVE: Margin-top: auto para empujarlo al fondo */
 .cookies {
-    /* AJUSTE CLAVE: Máximo ancho para que se vea bien centrado */
-    max-width: 160vh; 
-    width: 90%; /* Usa 90% del ancho del body para permitir espacio */
+    width: 100%; 
+    margin-top: auto; 
+    margin-bottom: 3vh; 
     
     display: flex;
     align-items: center;
@@ -188,13 +183,8 @@ body {
     background-color: white;
     border-radius: 0.5vh;
     flex-wrap: wrap; 
-    
-    /* ¡AJUSTE CLAVE PARA CENTRAR HORIZONTALMENTE Y EMPUJAR AL FONDO! */
-    margin: auto; 
-    margin-top: auto; 
-    margin-bottom: 3vh; /* Añadimos un pequeño margen inferior para separarlo del borde */
 }
-/* Estilo para la imagen de la galleta (etiqueta img) */
+
 .cookies img.cookie {
     width: 6vh;
     height: 6vh;
@@ -204,6 +194,7 @@ body {
     flex: 0 0 auto; 
     font-size: 2.5vh; 
     font-weight: 700;
+    white-space: nowrap;
     margin-right: 1.5vh;
 }
 
