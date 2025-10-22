@@ -1,0 +1,11 @@
+# Dependencias
+/node_modules
+/vendor
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Entornos Virtuales
+.venv/
+venv/
